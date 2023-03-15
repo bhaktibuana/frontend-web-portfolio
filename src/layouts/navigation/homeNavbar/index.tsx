@@ -1,20 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { animateScroll } from "react-scroll";
+import NavbarHomeButton from "../../../components/buttons/navbarHomeButton";
 import { SiBitly } from "react-icons/si";
-import { Navigation, LeftContent, RightContent, LogoContainer } from "./style";
 import { colorPalette } from "../../../constants/colorPalette";
+import { Navigation, LeftContent, RightContent, LogoContainer } from "./style";
 
-const HomeNavbar = () => {
+interface ComponentProps {
+  navButton: Array<object>;
+}
+
+const HomeNavbar = ({ navButton }: ComponentProps) => {
+  const scrollToTop = () => {
+    animateScroll.scrollToTop();
+  };
+
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
   return (
     <>
       <Navigation color={colorPalette}>
-        <LeftContent to="/" color={colorPalette}>
+        <LeftContent to="/" color={colorPalette} onClick={scrollToTop}>
           <LogoContainer>
             <SiBitly size={25} />
           </LogoContainer>
           Bhakti
         </LeftContent>
 
-        <RightContent></RightContent>
+        <RightContent>
+          {navButton.map(({ text, scrollTo }: any, index) => (
+            <NavbarHomeButton key={index} text={text} scrollTo={scrollTo} />
+          ))}
+        </RightContent>
       </Navigation>
     </>
   );
