@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
 export const Navigation = styled.nav`
   position: fixed;
@@ -12,14 +13,34 @@ export const Navigation = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 17px 10%;
-  background-color: #ffffff;
+  background-color: ${({ color }) => color.bgLight};
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 `;
 
-export const LeftContent = styled.div`
+export const LeftContent = styled(LinkR)`
   height: 100%;
-  width: 50px;
-  background-color: red;
+  width: auto;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: ${({ color }) => color.textLight};
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: #298dc7;
+  }
+`;
+
+export const LogoContainer = styled.div`
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4px;
 `;
 
 export const RightContent = styled.div``;
