@@ -3,7 +3,7 @@ export const colorPalette = {
   bgDark: "#202020",
   textLight: "#202020",
   textDark: "#ffffff",
-  primary: "#2a3deb",
-  secondary: "#48ffd5",
-  tertiary: "#041a2c",
+  primary: "#14b8a6",
+  secondary: "#1e293b",
+  tertiary: "#f1f5f9",
 };
