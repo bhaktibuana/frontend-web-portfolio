@@ -11,6 +11,7 @@ const NavbarHomeButton = ({ text, scrollTo }: ComponentProps) => {
   return (
     <>
       <NavButton
+        data-testid="navbarHomeButton"
         color={colorPalette}
         activeClass="active"
         spy={true}
