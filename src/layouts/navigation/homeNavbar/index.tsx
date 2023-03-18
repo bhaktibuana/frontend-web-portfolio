@@ -20,7 +20,7 @@ const HomeNavbar = ({ navButton }: ComponentProps) => {
 
   return (
     <>
-      <Navigation color={colorPalette}>
+      <Navigation data-testid="homeNavbar" color={colorPalette}>
         <LeftContent to="/" color={colorPalette} onClick={scrollToTop}>
           <LogoContainer>
             <SiBitly size={25} />

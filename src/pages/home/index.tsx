@@ -2,7 +2,7 @@ import React from "react";
 import HomeNavbar from "../../layouts/navigation/homeNavbar";
 import { Container, Section } from "./style";
 
-const navButtonArr = [
+export const navButtonArr = [
   { text: "Home", scrollTo: "home" },
   { text: "About", scrollTo: "about" },
   { text: "Skills", scrollTo: "skills" },
