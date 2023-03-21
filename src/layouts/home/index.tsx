@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
+import { Section } from "./style";
 
-const HomeLayout = () => {
-  return (
-    <>
-      <div>HomeLayout</div>
-    </>
-  );
+interface ComponentProps {
+  id: string;
 }
 
-export default HomeLayout
+const HomeLayout = ({ id }: ComponentProps) => {
+  return (
+    <>
+      <Section id={id}>Hello Home</Section>
+    </>
+  );
+};
+
+export default HomeLayout;

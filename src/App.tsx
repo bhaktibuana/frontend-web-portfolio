@@ -1,17 +1,20 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavigationProvider from "./contexts/NavigationProvider";
+import HomePage from "./pages/home";
 
 import "./App.scss";
-import HomePage from "./pages/home";
 
 const App = () => {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-      </BrowserRouter>
+      <NavigationProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+        </BrowserRouter>
+      </NavigationProvider>
     </>
   );
 };

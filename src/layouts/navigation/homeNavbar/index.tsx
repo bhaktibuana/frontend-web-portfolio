@@ -1,9 +1,16 @@
 import React, { useEffect } from "react";
 import { animateScroll } from "react-scroll";
 import NavbarHomeButton from "../../../components/buttons/navbarHomeButton";
+import HamburgerButton from "../../../components/buttons/hamburgerButton";
 import { SiBitly } from "react-icons/si";
 import { colorPalette } from "../../../constants/colorPalette";
-import { Navigation, LeftContent, RightContent, LogoContainer } from "./style";
+import {
+  Navigation,
+  LeftContent,
+  RightContent,
+  LogoContainer,
+  HamburgerContainer,
+} from "./style";
 
 interface ComponentProps {
   navButton: Array<object>;
@@ -33,6 +40,10 @@ const HomeNavbarLayout = ({ navButton }: ComponentProps) => {
             <NavbarHomeButton key={index} text={text} scrollTo={scrollTo} />
           ))}
         </RightContent>
+
+        <HamburgerContainer>
+          <HamburgerButton />
+        </HamburgerContainer>
       </Navigation>
     </>
   );
