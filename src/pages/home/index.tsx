@@ -1,5 +1,5 @@
 import React from "react";
-import HomeNavbar from "../../layouts/navigation/homeNavbar";
+import HomeNavbarLayout from "../../layouts/navigation/homeNavbar";
 import { Container, Section } from "./style";
 
 export const navButtonArr = [
@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <>
       <Container>
-        <HomeNavbar navButton={navButtonArr} />
+        <HomeNavbarLayout navButton={navButtonArr} />
 
         <Section id="home" color="red" />
         <Section id="about" color="green" />

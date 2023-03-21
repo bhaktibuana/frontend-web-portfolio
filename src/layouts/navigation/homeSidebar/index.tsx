@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomeSidebar = () => {
+const HomeSidebarLayout = () => {
   return (
     <>
       <div>HomeSidebar</div>
@@ -8,4 +8,4 @@ const HomeSidebar = () => {
   );
 };
 
-export default HomeSidebar;
+export default HomeSidebarLayout;

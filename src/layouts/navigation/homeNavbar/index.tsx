@@ -9,7 +9,7 @@ interface ComponentProps {
   navButton: Array<object>;
 }
 
-const HomeNavbar = ({ navButton }: ComponentProps) => {
+const HomeNavbarLayout = ({ navButton }: ComponentProps) => {
   const scrollToTop = () => {
     animateScroll.scrollToTop();
   };
@@ -38,4 +38,4 @@ const HomeNavbar = ({ navButton }: ComponentProps) => {
   );
 };
 
-export default HomeNavbar;
+export default HomeNavbarLayout;

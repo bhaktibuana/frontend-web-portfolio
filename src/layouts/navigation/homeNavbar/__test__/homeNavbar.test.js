@@ -1,7 +1,7 @@
 import { render, screen, cleanup } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import renderer from "react-test-renderer";
-import HomeNavbar from "..";
+import HomeNavbarLayout from "..";
 import { navButtonArr } from "../../../../pages/home";
 import { BrowserRouter } from "react-router-dom";
 
@@ -12,7 +12,7 @@ afterEach(() => {
 test("should render navbar", () => {
   render(
     <BrowserRouter>
-      <HomeNavbar navButton={navButtonArr} />
+      <HomeNavbarLayout navButton={navButtonArr} />
     </BrowserRouter>
   );
   const navbarElement = screen.getByTestId("homeNavbar");
@@ -25,7 +25,7 @@ test("matches snapshot", () => {
   const tree = renderer
     .create(
       <BrowserRouter>
-        <HomeNavbar navButton={navButtonArr} />
+        <HomeNavbarLayout navButton={navButtonArr} />
       </BrowserRouter>
     )
     .toJSON();
