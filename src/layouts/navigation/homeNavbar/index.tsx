@@ -1,16 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { animateScroll } from "react-scroll";
 import NavbarHomeButton from "../../../components/buttons/navbarHomeButton";
 import HamburgerButton from "../../../components/buttons/hamburgerButton";
-import { SiBitly } from "react-icons/si";
 import { colorPalette } from "../../../constants/colorPalette";
 import {
   Navigation,
   LeftContent,
   RightContent,
-  LogoContainer,
   HamburgerContainer,
 } from "./style";
+import TitleIcon from "../../../components/titleIcon";
 
 interface ComponentProps {
   navButton: Array<object>;
@@ -21,18 +20,11 @@ const HomeNavbarLayout = ({ navButton }: ComponentProps) => {
     animateScroll.scrollToTop();
   };
 
-  useEffect(() => {
-    scrollToTop();
-  }, []);
-
   return (
     <>
       <Navigation data-testid="homeNavbar" color={colorPalette}>
-        <LeftContent to="/" color={colorPalette} onClick={scrollToTop}>
-          <LogoContainer>
-            <SiBitly size={25} />
-          </LogoContainer>
-          Bhakti
+        <LeftContent to="/" onClick={scrollToTop}>
+          <TitleIcon />
         </LeftContent>
 
         <RightContent>

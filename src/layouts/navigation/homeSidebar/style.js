@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
 export const Container = styled.div`
   width: 100%;
@@ -8,56 +9,24 @@ export const Container = styled.div`
   display: flex;
   justify-content: flex-end;
   left: -300%;
-  /* left: ${({ isOpen }) => (isOpen ? "0" : "-300%")}; */
-
-  &.open {
-    animation: sidebar-open 1s ease-in-out forwards;
-
-    @keyframes sidebar-open {
-      0% {
-        left: -300%;
-      }
-      100% {
-        left: 0;
-      }
-    }
-  }
-
-  &.close {
-    animation: sidebar-close 1s ease-in-out forwards;
-
-    @keyframes sidebar-close {
-      0% {
-        left: 0;
-      }
-      100% {
-        left: -300%;
-      }
-    }
-  }
+  left: ${({ isOpen }) => (isOpen ? "0" : "-300%")};
 `;
 
 export const DarkScreen = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  /* display: ${({ isOpen }) => (isOpen ? "flex" : "none")}; */
-  /* opacity: ${({ isOpen }) => (isOpen ? "1" : "0")}; */
-  /* animation-name: dark-screen 2s ease-in-out forwards; */
+  display: flex;
+  position: fixed;
 
   &.open {
     animation: dark-screen-open 0.3s ease-in-out forwards;
 
     @keyframes dark-screen-open {
       0% {
-        display: none;
-      }
-      5% {
-        display: flex;
         opacity: 0;
       }
       100% {
-        display: flex;
         opacity: 1;
       }
     }
@@ -68,16 +37,69 @@ export const DarkScreen = styled.div`
 
     @keyframes dark-screen-close {
       0% {
-        display: flex;
         opacity: 1;
       }
-      95% {
-        display: flex;
-        opacity: 0;
-      }
       100% {
-        display: none;
+        opacity: 0;
       }
     }
   }
+`;
+
+export const SidebarContent = styled.nav`
+  width: 260px;
+  height: 100vh;
+  background-color: ${({ color }) => color.bgLight};
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+  left: ${(props) => (props.isOpen ? "0" : "-300%")};
+  display: flex;
+  float: right;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  transition: all 0.3s ease-in-out;
+  z-index: 160;
+`;
+
+export const SidebarLine = styled.div`
+  width: calc(100% - 30px);
+  height: 1px;
+  background-color: ${({ color }) => color.bgDark};
+`;
+
+export const SidebarTitleContainer = styled.div`
+  margin: 0px;
+  padding: 15px 0px;
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+`;
+
+export const SidebarTitle = styled(LinkR)`
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+`;
+
+export const SidebarItems = styled.div`
+  width: 100%;
+  height: auto;
+  background: transparent;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 `;

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { animateScroll } from "react-scroll";
 import HomeNavbarLayout from "../../layouts/navigation/homeNavbar";
 import HomeLayout from "../../layouts/home";
 import HomeSidebarLayout from "../../layouts/navigation/homeSidebar";
@@ -15,6 +16,14 @@ export const navButtonArr = [
 ];
 
 const HomePage = () => {
+  const scrollToTop = () => {
+    animateScroll.scrollToTop();
+  };
+
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
   return (
     <>
       <Container>

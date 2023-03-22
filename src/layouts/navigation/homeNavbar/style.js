@@ -8,7 +8,7 @@ export const Navigation = styled.nav`
   right: 0;
   width: 100%;
   height: 65px;
-  z-index: 100;
+  z-index: 140;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,27 +40,9 @@ export const LeftContent = styled(LinkR)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: ${({ color }) => color.textLight};
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Poppins", sans-serif;
-  transition: all 0.2s ease-in-out;
   cursor: pointer;
   user-select: none;
-  -webkit-user-select: none;
-
-  &:hover {
-    color: ${({ color }) => color.primary};
-  }
-`;
-
-export const LogoContainer = styled.div`
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 4px;
+  -webkit-tap-highlight-color: transparent;
 `;
 
 export const RightContent = styled.div`
