@@ -12,10 +12,14 @@ import {
   SidebarTitle,
   SidebarItems,
 } from "./style";
+import SidebarHomeButton from "../../../components/buttons/sidebarHomeButton";
+interface ComponentProps {
+  navButton: Array<object>;
+}
 
 const safeDocument: any = typeof document !== "undefined" ? document : {};
 
-const HomeSidebarLayout = () => {
+const HomeSidebarLayout = ({ navButton }: ComponentProps) => {
   const { homeNavOpen, setHomeNavOpen } = useNavigation();
 
   const scrollToTop = () => {
@@ -53,7 +57,14 @@ const HomeSidebarLayout = () => {
           <SidebarLine color={colorPalette} />
 
           <SidebarItems>
-            
+            {navButton.map(({ text, scrollTo, icon }: any, index) => (
+              <SidebarHomeButton
+                key={index}
+                icon={icon}
+                text={text}
+                scrollTo={scrollTo}
+              />
+            ))}
           </SidebarItems>
         </SidebarContent>
       </Container>
