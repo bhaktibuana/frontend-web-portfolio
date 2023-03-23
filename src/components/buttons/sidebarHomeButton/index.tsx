@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import { colorPalette } from "../../../constants/colorPalette";
-import { SideButton } from "./style";
+import { SideButton, IconContainer } from "./style";
 
 interface ComponentProps {
   text: string;
@@ -21,7 +21,7 @@ const SidebarHomeButton = ({ text, scrollTo, icon }: ComponentProps) => {
         delay={100}
         offset={-65}
       >
-        {icon}
+        <IconContainer>{icon}</IconContainer>
         <p>{text}</p>
       </SideButton>
     </>

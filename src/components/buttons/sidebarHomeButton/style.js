@@ -32,3 +32,11 @@ export const SideButton = styled(LinkS)`
     }
   }
 `;
+
+export const IconContainer = styled.div`
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
