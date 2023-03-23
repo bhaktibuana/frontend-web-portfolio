@@ -10,6 +10,7 @@ afterEach(() => {
 test("should render button", () => {
   render(<NavbarHomeButton text="Home" scrollTo="home" />);
   const buttonElement = screen.getByTestId("navbarHomeButton");
+  
   expect(buttonElement).toBeInTheDocument();
   expect(buttonElement).toHaveTextContent("Home");
 });

@@ -12,6 +12,7 @@ const SidebarHomeButton = ({ text, scrollTo, icon }: ComponentProps) => {
   return (
     <>
       <SideButton
+        data-testid="sidebarHomeButton"
         color={colorPalette}
         activeClass="active"
         spy={true}

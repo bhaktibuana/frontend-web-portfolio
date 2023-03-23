@@ -23,6 +23,7 @@ const HamburgerButton = () => {
   return (
     <>
       <Container
+        data-testid="hamburgerButton"
         ref={hamburgerRef}
         color={colorPalette}
         className={`${homeNavOpen ? "open" : "close"}`}

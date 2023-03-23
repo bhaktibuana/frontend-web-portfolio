@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<a
+  className="sc-beqWaB ipwSuT"
+  color={
+    Object {
+      "bgDark": "#202020",
+      "bgLight": "#ffffff",
+      "primary": "#14b8a6",
+      "secondary": "#1e293b",
+      "tertiary": "#f1f5f9",
+      "textDark": "#ffffff",
+      "textLight": "#202020",
+    }
+  }
+  data-testid="sidebarHomeButton"
+  onClick={[Function]}
+  style={Object {}}
+>
+  <div
+    className="sc-gueYoa jGxKvQ"
+  >
+    <svg
+      fill="currentColor"
+      height={24}
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+      />
+    </svg>
+  </div>
+  <p>
+    Home
+  </p>
+</a>
+`;

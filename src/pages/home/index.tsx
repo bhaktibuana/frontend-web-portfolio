@@ -63,7 +63,7 @@ const HomePage = () => {
 
   return (
     <>
-      <Container>
+      <Container data-testid="homePage">
         <HomeSidebarLayout navButton={navButtonArr} />
         <HomeNavbarLayout navButton={navButtonArr} />
 

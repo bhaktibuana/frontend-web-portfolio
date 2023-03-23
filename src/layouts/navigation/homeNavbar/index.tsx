@@ -16,14 +16,14 @@ interface ComponentProps {
 }
 
 const HomeNavbarLayout = ({ navButton }: ComponentProps) => {
-  const scrollToTop = () => {
+  const scrollToTop = (): void => {
     animateScroll.scrollToTop();
   };
 
   return (
     <>
       <Navigation data-testid="homeNavbar" color={colorPalette}>
-        <LeftContent to="/" onClick={scrollToTop}>
+        <LeftContent data-testid="homeNavbarTitle" to="/" onClick={scrollToTop}>
           <TitleIcon />
         </LeftContent>
 

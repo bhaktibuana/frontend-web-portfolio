@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="sc-beqWaB blyAlL close"
+  color={
+    Object {
+      "bgDark": "#202020",
+      "bgLight": "#ffffff",
+      "primary": "#14b8a6",
+      "secondary": "#1e293b",
+      "tertiary": "#f1f5f9",
+      "textDark": "#ffffff",
+      "textLight": "#202020",
+    }
+  }
+  data-testid="hamburgerButton"
+  onClick={[Function]}
+>
+  <span />
+  <span />
+  <span />
+  <span />
+</div>
+`;

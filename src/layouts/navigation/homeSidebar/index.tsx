@@ -17,7 +17,7 @@ interface ComponentProps {
   navButton: Array<object>;
 }
 
-const safeDocument: any = typeof document !== "undefined" ? document : {};
+export const safeDocument: any = typeof document !== "undefined" ? document : {};
 
 const HomeSidebarLayout = ({ navButton }: ComponentProps) => {
   const { homeNavOpen, setHomeNavOpen } = useNavigation();
@@ -38,10 +38,12 @@ const HomeSidebarLayout = ({ navButton }: ComponentProps) => {
   return (
     <>
       <Container
+        data-testid="homeSidebar"
         className={`${homeNavOpen ? "open" : "close"}`}
         isOpen={homeNavOpen}
       >
         <DarkScreen
+          data-testid="homeSidebarDarkScreen"
           className={`${homeNavOpen ? "open" : "close"}`}
           isOpen={homeNavOpen}
           onClick={() => setHomeNavOpen(false)}
@@ -49,7 +51,11 @@ const HomeSidebarLayout = ({ navButton }: ComponentProps) => {
 
         <SidebarContent isOpen={homeNavOpen} color={colorPalette}>
           <SidebarTitleContainer>
-            <SidebarTitle to="/" onClick={scrollToTop}>
+            <SidebarTitle
+              data-testid="homeSidebarTitle"
+              to="/"
+              onClick={scrollToTop}
+            >
               <TitleIcon />
             </SidebarTitle>
           </SidebarTitleContainer>
