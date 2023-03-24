@@ -25,3 +25,16 @@ test("should render home page", () => {
   expect(navbarElement).toBeInTheDocument();
   expect(sidebarElement).toBeInTheDocument();
 });
+
+test("matches snapshot", () => {
+  const tree = renderer
+    .create(
+      <NavigationProvider>
+        <BrowserRouter>
+          <HomePage />
+        </BrowserRouter>
+      </NavigationProvider>
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
