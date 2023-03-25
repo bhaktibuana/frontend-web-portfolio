@@ -12,7 +12,14 @@ import { BsFillFileEarmarkCodeFill } from "react-icons/bs";
 import HomeNavbarLayout from "../../layouts/navigation/homeNavbar";
 import HomeLayout from "../../layouts/home";
 import HomeSidebarLayout from "../../layouts/navigation/homeSidebar";
-import { Container, Section } from "./style";
+import { Container } from "./style";
+import AboutLayout from "../../layouts/about";
+import SkillsLayout from "../../layouts/skills";
+import ExperienceLayout from "../../layouts/experience";
+import PortfolioLayout from "../../layouts/portfolio";
+import BlogLayout from "../../layouts/blog";
+import ContactLayout from "../../layouts/contact";
+import FooterLayout from "../../layouts/footer";
 
 export const navButtonArr = [
   {
@@ -37,7 +44,7 @@ export const navButtonArr = [
   },
   {
     text: "Portfolio",
-    scrollTo: "protfolio",
+    scrollTo: "portfolio",
     icon: <MdOutlineAppRegistration size={24} />,
   },
   {
@@ -68,8 +75,13 @@ const HomePage = () => {
         <HomeNavbarLayout navButton={navButtonArr} />
 
         <HomeLayout id="home" />
-        <Section id="about" color="green" />
-        <Section id="skills" color="blue" />
+        <AboutLayout id="about" />
+        <SkillsLayout id="skills" />
+        <ExperienceLayout id="experience" />
+        <PortfolioLayout id="portfolio" />
+        <BlogLayout id="blog" />
+        <ContactLayout id="contact" />
+        <FooterLayout />
       </Container>
     </>
   );

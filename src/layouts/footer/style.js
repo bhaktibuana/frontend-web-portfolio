@@ -4,5 +4,5 @@ export const Section = styled.section`
   width: 100%;
   height: auto;
   min-height: 800px;
-  background-color: ${({ color }) => color.bgLight};
+  background-color: ${({ color }) => color.secondary};
 `;

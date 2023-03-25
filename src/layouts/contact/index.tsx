@@ -6,14 +6,14 @@ interface ComponentProps {
   id: string;
 }
 
-const HomeLayout = ({ id }: ComponentProps) => {
+const ContactLayout = ({ id }: ComponentProps) => {
   return (
     <>
       <Section id={id} color={colorPalette}>
-        Hello Home
+        ContactLayout
       </Section>
     </>
   );
 };
 
-export default HomeLayout;
+export default ContactLayout;
