@@ -29,6 +29,12 @@ test("should render home navbar", () => {
 
   fireEvent.click(titleElement);
   expect(window.screenY).toEqual(0);
+
+  fireEvent.scroll(window, { target: { scrollY: 500 } });
+  expect(navbarElement).not.toHaveStyle({ background: "transparent" });
+
+  fireEvent.scroll(window, { target: { scrollY: 0 } });
+  expect(navbarElement).toHaveStyle({ background: "transparent" });
 });
 
 test("matches snapshot", () => {
