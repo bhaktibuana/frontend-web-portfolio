@@ -19,7 +19,6 @@ exports[`matches snapshot 1`] = `
       color={
         Object {
           "bgDark": "#202020",
-          "bgGrey": "#f1f5f9",
           "bgLight": "#ffffff",
           "primary": "#14b8a6",
           "secondary": "#1e293b",
@@ -43,7 +42,6 @@ exports[`matches snapshot 1`] = `
             color={
               Object {
                 "bgDark": "#202020",
-                "bgGrey": "#f1f5f9",
                 "bgLight": "#ffffff",
                 "primary": "#14b8a6",
                 "secondary": "#1e293b",
@@ -52,6 +50,7 @@ exports[`matches snapshot 1`] = `
                 "textLight": "#202020",
               }
             }
+            data-testid="titleIcon"
           >
             <div
               className="sc-iAEyYk dCKPTy"
@@ -77,7 +76,9 @@ exports[`matches snapshot 1`] = `
                 />
               </svg>
             </div>
-            <p>
+            <p
+              data-testid="titleIconText"
+            >
               Bhakti Portfolio
             </p>
           </div>
@@ -88,7 +89,6 @@ exports[`matches snapshot 1`] = `
         color={
           Object {
             "bgDark": "#202020",
-            "bgGrey": "#f1f5f9",
             "bgLight": "#ffffff",
             "primary": "#14b8a6",
             "secondary": "#1e293b",
@@ -106,7 +106,6 @@ exports[`matches snapshot 1`] = `
           color={
             Object {
               "bgDark": "#202020",
-              "bgGrey": "#f1f5f9",
               "bgLight": "#ffffff",
               "primary": "#14b8a6",
               "secondary": "#1e293b",
@@ -154,7 +153,6 @@ exports[`matches snapshot 1`] = `
           color={
             Object {
               "bgDark": "#202020",
-              "bgGrey": "#f1f5f9",
               "bgLight": "#ffffff",
               "primary": "#14b8a6",
               "secondary": "#1e293b",
@@ -202,7 +200,6 @@ exports[`matches snapshot 1`] = `
           color={
             Object {
               "bgDark": "#202020",
-              "bgGrey": "#f1f5f9",
               "bgLight": "#ffffff",
               "primary": "#14b8a6",
               "secondary": "#1e293b",
@@ -246,7 +243,6 @@ exports[`matches snapshot 1`] = `
           color={
             Object {
               "bgDark": "#202020",
-              "bgGrey": "#f1f5f9",
               "bgLight": "#ffffff",
               "primary": "#14b8a6",
               "secondary": "#1e293b",
@@ -297,7 +293,6 @@ exports[`matches snapshot 1`] = `
           color={
             Object {
               "bgDark": "#202020",
-              "bgGrey": "#f1f5f9",
               "bgLight": "#ffffff",
               "primary": "#14b8a6",
               "secondary": "#1e293b",
@@ -345,7 +340,6 @@ exports[`matches snapshot 1`] = `
           color={
             Object {
               "bgDark": "#202020",
-              "bgGrey": "#f1f5f9",
               "bgLight": "#ffffff",
               "primary": "#14b8a6",
               "secondary": "#1e293b",
@@ -393,7 +387,6 @@ exports[`matches snapshot 1`] = `
           color={
             Object {
               "bgDark": "#202020",
-              "bgGrey": "#f1f5f9",
               "bgLight": "#ffffff",
               "primary": "#14b8a6",
               "secondary": "#1e293b",
@@ -444,7 +437,6 @@ exports[`matches snapshot 1`] = `
     color={
       Object {
         "bgDark": "#202020",
-        "bgGrey": "#f1f5f9",
         "bgLight": "#ffffff",
         "primary": "#14b8a6",
         "secondary": "#1e293b",
@@ -466,7 +458,6 @@ exports[`matches snapshot 1`] = `
         color={
           Object {
             "bgDark": "#202020",
-            "bgGrey": "#f1f5f9",
             "bgLight": "#ffffff",
             "primary": "#14b8a6",
             "secondary": "#1e293b",
@@ -475,6 +466,7 @@ exports[`matches snapshot 1`] = `
             "textLight": "#202020",
           }
         }
+        data-testid="titleIcon"
       >
         <div
           className="sc-iAEyYk dCKPTy"
@@ -500,7 +492,9 @@ exports[`matches snapshot 1`] = `
             />
           </svg>
         </div>
-        <p>
+        <p
+          data-testid="titleIconText"
+        >
           Bhakti Portfolio
         </p>
       </div>
@@ -513,7 +507,6 @@ exports[`matches snapshot 1`] = `
         color={
           Object {
             "bgDark": "#202020",
-            "bgGrey": "#f1f5f9",
             "bgLight": "#ffffff",
             "primary": "#14b8a6",
             "secondary": "#1e293b",
@@ -533,7 +526,6 @@ exports[`matches snapshot 1`] = `
         color={
           Object {
             "bgDark": "#202020",
-            "bgGrey": "#f1f5f9",
             "bgLight": "#ffffff",
             "primary": "#14b8a6",
             "secondary": "#1e293b",
@@ -553,7 +545,6 @@ exports[`matches snapshot 1`] = `
         color={
           Object {
             "bgDark": "#202020",
-            "bgGrey": "#f1f5f9",
             "bgLight": "#ffffff",
             "primary": "#14b8a6",
             "secondary": "#1e293b",
@@ -573,7 +564,6 @@ exports[`matches snapshot 1`] = `
         color={
           Object {
             "bgDark": "#202020",
-            "bgGrey": "#f1f5f9",
             "bgLight": "#ffffff",
             "primary": "#14b8a6",
             "secondary": "#1e293b",
@@ -593,7 +583,6 @@ exports[`matches snapshot 1`] = `
         color={
           Object {
             "bgDark": "#202020",
-            "bgGrey": "#f1f5f9",
             "bgLight": "#ffffff",
             "primary": "#14b8a6",
             "secondary": "#1e293b",
@@ -613,7 +602,6 @@ exports[`matches snapshot 1`] = `
         color={
           Object {
             "bgDark": "#202020",
-            "bgGrey": "#f1f5f9",
             "bgLight": "#ffffff",
             "primary": "#14b8a6",
             "secondary": "#1e293b",
@@ -633,7 +621,6 @@ exports[`matches snapshot 1`] = `
         color={
           Object {
             "bgDark": "#202020",
-            "bgGrey": "#f1f5f9",
             "bgLight": "#ffffff",
             "primary": "#14b8a6",
             "secondary": "#1e293b",
@@ -657,7 +644,6 @@ exports[`matches snapshot 1`] = `
         color={
           Object {
             "bgDark": "#202020",
-            "bgGrey": "#f1f5f9",
             "bgLight": "#ffffff",
             "primary": "#14b8a6",
             "secondary": "#1e293b",
@@ -677,11 +663,10 @@ exports[`matches snapshot 1`] = `
     </div>
   </nav>
   <section
-    className="sc-fsQiph kWoFkz"
+    className="sc-fsQiph hhBqDy"
     color={
       Object {
         "bgDark": "#202020",
-        "bgGrey": "#f1f5f9",
         "bgLight": "#ffffff",
         "primary": "#14b8a6",
         "secondary": "#1e293b",
@@ -693,6 +678,124 @@ exports[`matches snapshot 1`] = `
     id="home"
   >
     Hello Home
+  </section>
+  <section
+    className="sc-fGFwAa beBCaz"
+    color={
+      Object {
+        "bgDark": "#202020",
+        "bgLight": "#ffffff",
+        "primary": "#14b8a6",
+        "secondary": "#1e293b",
+        "tertiary": "#f1f5f9",
+        "textDark": "#ffffff",
+        "textLight": "#202020",
+      }
+    }
+    id="about"
+  >
+    AboutLayout
+  </section>
+  <section
+    className="sc-blLsxD kmKFNd"
+    color={
+      Object {
+        "bgDark": "#202020",
+        "bgLight": "#ffffff",
+        "primary": "#14b8a6",
+        "secondary": "#1e293b",
+        "tertiary": "#f1f5f9",
+        "textDark": "#ffffff",
+        "textLight": "#202020",
+      }
+    }
+    id="skills"
+  >
+    SkillsLayout
+  </section>
+  <section
+    className="sc-ieZDjg cDRyei"
+    color={
+      Object {
+        "bgDark": "#202020",
+        "bgLight": "#ffffff",
+        "primary": "#14b8a6",
+        "secondary": "#1e293b",
+        "tertiary": "#f1f5f9",
+        "textDark": "#ffffff",
+        "textLight": "#202020",
+      }
+    }
+    id="experience"
+  >
+    ExperienceLayout
+  </section>
+  <section
+    className="sc-dKfzgJ ldeZku"
+    color={
+      Object {
+        "bgDark": "#202020",
+        "bgLight": "#ffffff",
+        "primary": "#14b8a6",
+        "secondary": "#1e293b",
+        "tertiary": "#f1f5f9",
+        "textDark": "#ffffff",
+        "textLight": "#202020",
+      }
+    }
+    id="portfolio"
+  >
+    PortfolioLayout
+  </section>
+  <section
+    className="sc-hIqOWS fwGzXf"
+    color={
+      Object {
+        "bgDark": "#202020",
+        "bgLight": "#ffffff",
+        "primary": "#14b8a6",
+        "secondary": "#1e293b",
+        "tertiary": "#f1f5f9",
+        "textDark": "#ffffff",
+        "textLight": "#202020",
+      }
+    }
+    id="blog"
+  >
+    BlogLayout
+  </section>
+  <section
+    className="sc-dnwKUv khBNnO"
+    color={
+      Object {
+        "bgDark": "#202020",
+        "bgLight": "#ffffff",
+        "primary": "#14b8a6",
+        "secondary": "#1e293b",
+        "tertiary": "#f1f5f9",
+        "textDark": "#ffffff",
+        "textLight": "#202020",
+      }
+    }
+    id="contact"
+  >
+    ContactLayout
+  </section>
+  <section
+    className="sc-kgKVFY hhahMH"
+    color={
+      Object {
+        "bgDark": "#202020",
+        "bgLight": "#ffffff",
+        "primary": "#14b8a6",
+        "secondary": "#1e293b",
+        "tertiary": "#f1f5f9",
+        "textDark": "#ffffff",
+        "textLight": "#202020",
+      }
+    }
+  >
+    FooterLayout
   </section>
 </div>
 `;

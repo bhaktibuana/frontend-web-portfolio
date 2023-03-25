@@ -7,7 +7,6 @@ Array [
     color={
       Object {
         "bgDark": "#202020",
-        "bgGrey": "#f1f5f9",
         "bgLight": "#ffffff",
         "primary": "#14b8a6",
         "secondary": "#1e293b",
@@ -38,7 +37,6 @@ Array [
       color={
         Object {
           "bgDark": "#202020",
-          "bgGrey": "#f1f5f9",
           "bgLight": "#ffffff",
           "primary": "#14b8a6",
           "secondary": "#1e293b",
@@ -62,7 +60,6 @@ Array [
             color={
               Object {
                 "bgDark": "#202020",
-                "bgGrey": "#f1f5f9",
                 "bgLight": "#ffffff",
                 "primary": "#14b8a6",
                 "secondary": "#1e293b",
@@ -71,6 +68,7 @@ Array [
                 "textLight": "#202020",
               }
             }
+            data-testid="titleIcon"
           >
             <div
               className="sc-gueYoa eKBnIs"
@@ -96,7 +94,9 @@ Array [
                 />
               </svg>
             </div>
-            <p>
+            <p
+              data-testid="titleIconText"
+            >
               Bhakti Portfolio
             </p>
           </div>
@@ -107,7 +107,6 @@ Array [
         color={
           Object {
             "bgDark": "#202020",
-            "bgGrey": "#f1f5f9",
             "bgLight": "#ffffff",
             "primary": "#14b8a6",
             "secondary": "#1e293b",
@@ -125,7 +124,6 @@ Array [
           color={
             Object {
               "bgDark": "#202020",
-              "bgGrey": "#f1f5f9",
               "bgLight": "#ffffff",
               "primary": "#14b8a6",
               "secondary": "#1e293b",
@@ -173,7 +171,6 @@ Array [
           color={
             Object {
               "bgDark": "#202020",
-              "bgGrey": "#f1f5f9",
               "bgLight": "#ffffff",
               "primary": "#14b8a6",
               "secondary": "#1e293b",
@@ -221,7 +218,6 @@ Array [
           color={
             Object {
               "bgDark": "#202020",
-              "bgGrey": "#f1f5f9",
               "bgLight": "#ffffff",
               "primary": "#14b8a6",
               "secondary": "#1e293b",
@@ -265,7 +261,6 @@ Array [
           color={
             Object {
               "bgDark": "#202020",
-              "bgGrey": "#f1f5f9",
               "bgLight": "#ffffff",
               "primary": "#14b8a6",
               "secondary": "#1e293b",
@@ -316,7 +311,6 @@ Array [
           color={
             Object {
               "bgDark": "#202020",
-              "bgGrey": "#f1f5f9",
               "bgLight": "#ffffff",
               "primary": "#14b8a6",
               "secondary": "#1e293b",
@@ -364,7 +358,6 @@ Array [
           color={
             Object {
               "bgDark": "#202020",
-              "bgGrey": "#f1f5f9",
               "bgLight": "#ffffff",
               "primary": "#14b8a6",
               "secondary": "#1e293b",
@@ -412,7 +405,6 @@ Array [
           color={
             Object {
               "bgDark": "#202020",
-              "bgGrey": "#f1f5f9",
               "bgLight": "#ffffff",
               "primary": "#14b8a6",
               "secondary": "#1e293b",

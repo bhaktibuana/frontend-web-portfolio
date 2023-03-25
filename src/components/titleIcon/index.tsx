@@ -6,12 +6,12 @@ import { Container, LogoContainer } from "./style";
 const TitleIcon = () => {
   return (
     <>
-      <Container color={colorPalette}>
+      <Container data-testid="titleIcon" color={colorPalette}>
         <LogoContainer>
           <SiBitly size={25} />
         </LogoContainer>
 
-        <p>Bhakti Portfolio</p>
+        <p data-testid="titleIconText">Bhakti Portfolio</p>
       </Container>
     </>
   );

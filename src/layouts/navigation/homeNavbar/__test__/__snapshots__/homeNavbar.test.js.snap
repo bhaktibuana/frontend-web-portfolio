@@ -6,7 +6,6 @@ exports[`matches snapshot 1`] = `
   color={
     Object {
       "bgDark": "#202020",
-      "bgGrey": "#f1f5f9",
       "bgLight": "#ffffff",
       "primary": "#14b8a6",
       "secondary": "#1e293b",
@@ -28,7 +27,6 @@ exports[`matches snapshot 1`] = `
       color={
         Object {
           "bgDark": "#202020",
-          "bgGrey": "#f1f5f9",
           "bgLight": "#ffffff",
           "primary": "#14b8a6",
           "secondary": "#1e293b",
@@ -37,6 +35,7 @@ exports[`matches snapshot 1`] = `
           "textLight": "#202020",
         }
       }
+      data-testid="titleIcon"
     >
       <div
         className="sc-iAEyYk dCKPTy"
@@ -62,7 +61,9 @@ exports[`matches snapshot 1`] = `
           />
         </svg>
       </div>
-      <p>
+      <p
+        data-testid="titleIconText"
+      >
         Bhakti Portfolio
       </p>
     </div>
@@ -75,7 +76,6 @@ exports[`matches snapshot 1`] = `
       color={
         Object {
           "bgDark": "#202020",
-          "bgGrey": "#f1f5f9",
           "bgLight": "#ffffff",
           "primary": "#14b8a6",
           "secondary": "#1e293b",
@@ -95,7 +95,6 @@ exports[`matches snapshot 1`] = `
       color={
         Object {
           "bgDark": "#202020",
-          "bgGrey": "#f1f5f9",
           "bgLight": "#ffffff",
           "primary": "#14b8a6",
           "secondary": "#1e293b",
@@ -115,7 +114,6 @@ exports[`matches snapshot 1`] = `
       color={
         Object {
           "bgDark": "#202020",
-          "bgGrey": "#f1f5f9",
           "bgLight": "#ffffff",
           "primary": "#14b8a6",
           "secondary": "#1e293b",
@@ -135,7 +133,6 @@ exports[`matches snapshot 1`] = `
       color={
         Object {
           "bgDark": "#202020",
-          "bgGrey": "#f1f5f9",
           "bgLight": "#ffffff",
           "primary": "#14b8a6",
           "secondary": "#1e293b",
@@ -155,7 +152,6 @@ exports[`matches snapshot 1`] = `
       color={
         Object {
           "bgDark": "#202020",
-          "bgGrey": "#f1f5f9",
           "bgLight": "#ffffff",
           "primary": "#14b8a6",
           "secondary": "#1e293b",
@@ -175,7 +171,6 @@ exports[`matches snapshot 1`] = `
       color={
         Object {
           "bgDark": "#202020",
-          "bgGrey": "#f1f5f9",
           "bgLight": "#ffffff",
           "primary": "#14b8a6",
           "secondary": "#1e293b",
@@ -195,7 +190,6 @@ exports[`matches snapshot 1`] = `
       color={
         Object {
           "bgDark": "#202020",
-          "bgGrey": "#f1f5f9",
           "bgLight": "#ffffff",
           "primary": "#14b8a6",
           "secondary": "#1e293b",
@@ -219,7 +213,6 @@ exports[`matches snapshot 1`] = `
       color={
         Object {
           "bgDark": "#202020",
-          "bgGrey": "#f1f5f9",
           "bgLight": "#ffffff",
           "primary": "#14b8a6",
           "secondary": "#1e293b",
