@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { animateScroll } from "react-scroll";
 import NavbarHomeButton from "../../../components/buttons/navbarHomeButton";
 import HamburgerButton from "../../../components/buttons/hamburgerButton";
@@ -16,13 +16,42 @@ interface ComponentProps {
 }
 
 const HomeNavbarLayout = ({ navButton }: ComponentProps) => {
+  const [isScroll, setIsScroll] = useState<boolean>(false);
+  const [alphaValue, setAlphaValue] = useState<number>(0);
+
   const scrollToTop = (): void => {
     animateScroll.scrollToTop();
   };
 
+  const listenScrollEvent = (): void => {
+    if (window.scrollY < 1) {
+      setIsScroll(false);
+    } else {
+      setIsScroll(true);
+    }
+  };
+
+  const handleNavColor = (): void => {
+    let y = (window.scrollY || window.pageYOffset) / 150;
+    y = y > 3 ? 3 : y;
+    y = y / 3 - 0.2;
+    y = y < 0 ? 0 : y;
+    setAlphaValue(y);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    window.addEventListener("scroll", handleNavColor);
+  }, []);
+
   return (
     <>
-      <Navigation data-testid="homeNavbar" color={colorPalette}>
+      <Navigation
+        data-testid="homeNavbar"
+        color={colorPalette}
+        scroll={isScroll}
+        alpha={alphaValue}
+      >
         <LeftContent data-testid="homeNavbarTitle" to="/" onClick={scrollToTop}>
           <TitleIcon />
         </LeftContent>

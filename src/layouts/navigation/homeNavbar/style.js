@@ -13,8 +13,11 @@ export const Navigation = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 17px 0;
-  background-color: ${({ color }) => color.bgLight};
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  background: ${({ scroll, alpha }) =>
+    scroll ? `rgba(255, 255, 255, ${alpha})` : "transparent"};
+  box-shadow: ${({ scroll }) =>
+    scroll ? "0 1px 4px rgba(146, 161, 176, 0.3)" : "none"};
+  backdrop-filter: ${({ scroll }) => scroll ? "blur(5px)" : "none"};
   transition: all 0.3s ease-in-out;
 
   @media screen and (max-width: 2560px) {
