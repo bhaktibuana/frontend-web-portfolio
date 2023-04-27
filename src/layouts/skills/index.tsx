@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FaLaptopCode } from "react-icons/fa";
 import { colorPalette } from "../../constants/colorPalette";
 import useGet from "../../hooks/useGet";
