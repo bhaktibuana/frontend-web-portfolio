@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaLaptopCode } from "react-icons/fa";
 import { colorPalette } from "../../constants/colorPalette";
 import useGet from "../../hooks/useGet";
 import SectionTitle from "../../components/sectionTitle";
-import { Section, SkillsContainer } from "./style";
 import SkillCard from "../../components/skillCard";
+import { Section, SkillsContainer } from "./style";
 
 interface ComponentPropsIface {
   id: string;
@@ -19,7 +19,13 @@ interface SkillListIface {
 }
 
 const SkillsLayout = ({ id }: ComponentPropsIface) => {
-  const skillList = useGet("skillsData", "/skills");
+  const [skillList, setSkillList] = useState<any>([]);
+
+  const getSkills = useGet("skillsData", "/skills");
+
+  useEffect(() => {
+    if (!getSkills.isLoading) setSkillList(getSkills.data.payload);
+  }, [getSkills]);
 
   return (
     <>
@@ -29,10 +35,11 @@ const SkillsLayout = ({ id }: ComponentPropsIface) => {
           titleText="Skills & Abilities"
           isBgDark={false}
         />
+
         <SkillsContainer>
-          {skillList.isLoading
+          {getSkills.isLoading
             ? null
-            : skillList.data.payload.map(
+            : skillList.map(
                 (item: SkillListIface, index: number) => (
                   <SkillCard
                     key={index}
