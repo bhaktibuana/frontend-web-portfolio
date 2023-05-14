@@ -5,7 +5,9 @@ import { Section } from "./style";
 const FooterLayout = () => {
   return (
     <>
-      <Section color={colorPalette}>FooterLayout</Section>
+      <Section color={colorPalette}>
+        <h1 style={{ color: "gray", fontSize: "4rem" }}>COMING SOON</h1>
+      </Section>
     </>
   );
 };

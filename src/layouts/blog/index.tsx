@@ -10,7 +10,7 @@ const BlogLayout = ({ id }: ComponentProps) => {
   return (
     <>
       <Section id={id} color={colorPalette}>
-        BlogLayout
+        <h1 style={{ color: "gray", fontSize: "4rem" }}>COMING SOON</h1>
       </Section>
     </>
   );

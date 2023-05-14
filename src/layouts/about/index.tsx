@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { FaUser } from "react-icons/fa";
+import { IoIosMail, IoIosPin } from "react-icons/io";
+import useGet from "../../hooks/useGet";
 import { colorPalette } from "../../constants/colorPalette";
 import SectionTitle from "../../components/sectionTitle";
-import { FaUser } from "react-icons/fa";
-import useGet from "../../hooks/useGet";
 import ProfileImageCard from "../../components/profileImageCard";
-import { IoIosMail, IoIosPin } from "react-icons/io";
+import DownloadResumeButton from "../../components/buttons/downloadResumeButton";
 import {
   Section,
   AboutContainer,
@@ -17,7 +18,6 @@ import {
   ContactIcon,
   ContactInfo,
 } from "./style";
-import DownloadResumeButton from "../../components/buttons/downloadResumeButton";
 
 interface ComponentProps {
   id: string;

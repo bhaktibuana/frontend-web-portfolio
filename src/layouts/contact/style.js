@@ -5,4 +5,7 @@ export const Section = styled.section`
   height: auto;
   min-height: 800px;
   background-color: ${({ color }) => color.bgLight};
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

@@ -10,7 +10,7 @@ const HomeLayout = ({ id }: ComponentProps) => {
   return (
     <>
       <Section id={id} color={colorPalette}>
-        Hello Home
+        <h1 style={{ color: "gray", fontSize: "4rem" }}>COMING SOON</h1>
       </Section>
     </>
   );
